@@ -51,6 +51,11 @@ t/           - Test suites and verification
 
 BEM is in its formative stages. If you're interested in contributing to the concept, design, or implementation, please open an issue to start a discussion.
 
+## Credits
+
+- Project envisioned and started by [Robert de Forest](mailto:robert@defore.st).
+- AI assistance provided by (so far) Claude 3.7.
+
 ## License
 
 MIT. See LICENSE file.
