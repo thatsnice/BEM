@@ -1,0 +1,25 @@
+{
+  "name": "bem",
+  "version": "0.0.0",
+  "description": "BEM is a novel computing model inspired by biological systems and free market economics, creating a trust-minimized distributed computing environment.",
+  "main": "src/index.coffee",
+  "scripts": {
+    "test": "coffee t/index.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatsnice/BEM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thatsnice/BEM/issues"
+  },
+  "homepage": "https://github.com/thatsnice/BEM#readme",
+  "dependencies": {
+    "coffeescript": "^2.7.0",
+    "kava": "^7.9.0"
+  }
+}
