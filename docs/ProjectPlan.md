@@ -15,8 +15,11 @@ The substrate is the foundation of BEM, providing isolation, communication, and 
 
 **Key Deliverables:**
 - Initial substrate implementation in `src/substrate/`
-- Basic process creation and management
-- stdio-based message passing between processes
+- Process life cycle
+  - Basic process creation and management
+  - Handshaking, negotiations of protocol versions and capabilities of
+    substrate and process.
+- Mechanism of message passing between processes
 - Simple token allocation and tracking system
 - Documentation of substrate interfaces
 
@@ -35,6 +38,8 @@ Bootstrap services provide the minimum functionality required to enable a self-s
 - Create basic reputation tracking service
 - Develop persistence service for state management
 - Implement time tracking and scheduling service
+- Implement mechanism for granting system services (persistence, network
+  access) to some processes.
 
 **Key Deliverables:**
 - Implementation of core services in `src/bootstrap/`
@@ -47,7 +52,8 @@ Bootstrap services provide the minimum functionality required to enable a self-s
 2. Basic reputation service with simple trust model
 3. Persistence service for process state
 4. Time service implementation
-5. Integration test demonstrating service discovery and interaction
+5. Network access service (inbound and outbound TCP)
+6. Integration test demonstrating service discovery and interaction
 
 ### Phase 3: Basic Process Ecosystem (3-4 weeks)
 Develop a set of example processes that can collaborate to demonstrate system capabilities.
@@ -69,6 +75,10 @@ Develop a set of example processes that can collaborate to demonstrate system ca
 2. Basic utility processes implementation
 3. Process debugging tools
 4. Simple application composed of 3+ processes
+  1. A 'greeter' process should locate a 'world' process and send it a 'hello'
+     message.
+  2. The 'hello' process should report its satisfaction to the reputation
+     service.
 5. Documentation of development patterns
 
 ### Phase 4: Advanced Features (4-6 weeks)
@@ -100,6 +110,7 @@ Develop applications that demonstrate practical value to end users.
 - Develop demonstration applications showing practical utility
 - Create interfaces for human interaction with the system
 - Implement example distributed applications
+  - A distributed chat application, perhaps?
 - Document and package for distribution
 
 **Key Deliverables:**
@@ -118,8 +129,8 @@ Develop applications that demonstrate practical value to end users.
 ## Technology Stack
 
 - **Core Implementation**: CoffeeScript
-- **Alternative Implementation**: Kava
-- **Testing**: Appropriate testing frameworks
+- **Testing**: Appropriate testing frameworks, including Kava for
+  CoffeeScript/JavaScript components.
 - **Documentation**: Markdown
 - **Version Control**: Git/GitHub
 - **License**: MIT
