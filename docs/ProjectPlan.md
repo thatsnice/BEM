@@ -133,7 +133,7 @@ Develop applications that demonstrate practical value to end users.
   CoffeeScript/JavaScript components.
 - **Documentation**: Markdown
 - **Version Control**: Git/GitHub
-- **License**: MIT
+- **License**: ISC
 
 ## Development Approach
 

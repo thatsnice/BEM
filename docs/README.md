@@ -58,4 +58,4 @@ BEM is in its formative stages. If you're interested in contributing to the conc
 
 ## License
 
-MIT. See LICENSE file.
+ISC. See LICENSE file.
